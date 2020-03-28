@@ -1,2 +1,2 @@
-# ExceptionLog
-Laravel Persistent Exception Log Package
+## ExceptionLog
+_Laravel Exception Log Persistence Layer Package_
