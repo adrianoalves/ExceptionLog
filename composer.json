@@ -1,0 +1,32 @@
+{
+    "name": "adrianoalves/laravel-exceptionlog",
+    "description": "Simple Laravel Exception and Error Persistence Layer Log",
+    "type": "laravel-package",
+    "license": "MIT",
+    "require": {
+        "php": ">7.2",
+        "illuminate/support": ">=6"
+    },
+    "authors": [
+        {
+            "name": "Adriano Alves",
+            "email": "adriano@venddi.com.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "adrianoalves\\ExceptionLog\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "adrianoalves\\ExceptionLog\\ExceptionLogProvider"
+            ],
+            "aliases": {
+                "ExceptionLog": "adrianoalves\\ExceptionLog\\ExceptionLog"
+            }
+        }
+    }
+}
