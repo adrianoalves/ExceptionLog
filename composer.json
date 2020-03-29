@@ -13,7 +13,6 @@
             "email": "adriano@venddi.com.br"
         }
     ],
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "adrianoalves\\ExceptionLog\\" : "src"
