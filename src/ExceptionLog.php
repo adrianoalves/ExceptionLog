@@ -1,11 +1,20 @@
 <?php
 namespace adrianoalves\ExceptionLLog;
 
+use adrianoalves\ExceptionLLog\Model\Log;
+
 class ExceptionLog
 {
     protected $guarded = ['id'];
 
-    public static function persist( \Exception $e, $level = null, array $extraInfo = null )
+    /**
+     * Persists a new Log Exception
+     * @param \Exception $e
+     * @param null $level
+     * @param array|null $extraInfo
+     * @return Log
+     */
+    public static function persist( \Exception $e, $level = null, array $extraInfo = null ): Log
     {
         $data = [
             'description' => $e->getMessage(), 'file_line' => $e->getLine(), 'file' => $e->getFile()
@@ -16,6 +25,6 @@ class ExceptionLog
         if( $extraInfo )
             $data[ 'extra_info' ] = json_encode( $extraInfo );
 
-        return self::create( $data );
+        return Log::create( $data );
     }
 }
