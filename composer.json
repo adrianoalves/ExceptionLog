@@ -19,16 +19,16 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "adrianoalves\\ExceptionLog\\" : "src"
+            "ExceptionLog\\" : "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "adrianoalves\\ExceptionLog\\ExceptionLogProvider"
+                "ExceptionLog\\ExceptionLogProvider"
             ],
             "aliases": {
-                "ExceptionLog": "adrianoalves\\ExceptionLog\\ExceptionLog"
+                "ExceptionLog": "ExceptionLog\\ExceptionLog"
             }
         }
     }

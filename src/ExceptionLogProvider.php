@@ -1,5 +1,5 @@
 <?php
-namespace adrianoalves\ExceptionLog;
+namespace ExceptionLog;
 use Illuminate\Support\ServiceProvider;
 
 class ExceptionLogProvider extends ServiceProvider
@@ -14,11 +14,6 @@ class ExceptionLogProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/exceptionlog.php' => config_path('exceptionlog.php' ),
         ], 'config' );
-        /*if ($this->app->runningInConsole()) {
-            $this->commands([
-                LogCleanerUpper::class,
-            ]);
-        }*/
     }
 
     /**

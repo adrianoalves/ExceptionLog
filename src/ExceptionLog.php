@@ -1,7 +1,7 @@
 <?php
-namespace adrianoalves\ExceptionLog;
+namespace ExceptionLog;
 
-use adrianoalves\ExceptionLog\Model\Log;
+use ExceptionLog\Model\Log;
 
 class ExceptionLog
 {

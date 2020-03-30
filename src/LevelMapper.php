@@ -1,9 +1,9 @@
 <?php
-namespace adrianoalves\ExceptionLog;
+namespace ExceptionLog;
 
 /**
  * Class LevelMapper
- * @package adrianoalves\ExceptionLLog
+ * @package ExceptionLLog
  */
 class LevelMapper
 {
