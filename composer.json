@@ -1,6 +1,7 @@
 {
     "name": "adrianoalves/laravel-exceptionlog",
-    "description": "Simple Laravel Exception and Error Persistence Layer Log",
+    "description": "Simple Laravel Exception and Error Persistence Log Layer",
+    "keywords": [ "laravel", "logging", "log", "exception", "mysql", "php" ],
     "type": "laravel-package",
     "license": "MIT",
     "require": {

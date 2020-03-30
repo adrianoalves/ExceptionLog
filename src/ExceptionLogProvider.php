@@ -1,5 +1,5 @@
 <?php
-namespace adrianoalves\ExceptionLLog;
+namespace adrianoalves\ExceptionLog;
 use Illuminate\Support\ServiceProvider;
 
 class ExceptionLogProvider extends ServiceProvider

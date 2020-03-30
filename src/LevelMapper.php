@@ -1,5 +1,5 @@
 <?php
-namespace adrianoalves\ExceptionLLog;
+namespace adrianoalves\ExceptionLog;
 
 /**
  * Class LevelMapper

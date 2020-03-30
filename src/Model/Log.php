@@ -1,6 +1,6 @@
 <?php
 
-namespace adrianoalves\ExceptionLLog\Model;
+namespace adrianoalves\ExceptionLog\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
