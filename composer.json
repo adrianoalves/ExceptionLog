@@ -7,6 +7,8 @@
         "php": ">7.2",
         "illuminate/support": ">=6"
     },
+    "require-dev": {
+    },
     "authors": [
         {
             "name": "Adriano Alves",
