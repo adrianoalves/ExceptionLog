@@ -5,12 +5,12 @@ use Illuminate\Support\ServiceProvider;
 class ExceptionLogProvider extends ServiceProvider
 {
     /**
-     * Bootstrap Services.
+     * Bootstrap the migrarion file and the Exception Log configuration.
      * @return void
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/migrations');
+        $this->loadMigrationsFrom( __DIR__.'/migrations' );
         $this->publishes([
             __DIR__.'/config/exceptionlog.php' => config_path('exceptionlog.php' ),
         ], 'config' );

@@ -22,8 +22,8 @@ class ExceptionLog
 
         $data[ 'level' ] = $level ? $level : LevelMapper::LEVEL_ERROR_APPLICATION;
 
-        if( $extraInfo )
-            $data[ 'extra_info' ] = json_encode( $extraInfo );
+        if( is_array( $extraInfo ) )
+            $data[ 'extra_info' ] = $extraInfo;
 
         return Log::create( $data );
     }
