@@ -14,7 +14,7 @@ try{
   // ... put your watched code here
 }
 catch( \Exception $exception ){
-    LogException::persist( $exception, LogException\LevelMapper::LEVEL_ERROR_APPLICATION );
+    ExceptionLog::persist( $exception, ExceptionLog\LevelMapper::LEVEL_ERROR_APPLICATION );
 }
 ```
 It is simple as pie :)
